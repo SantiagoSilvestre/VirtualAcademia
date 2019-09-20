@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+    tools:context=".activity.VisualizarUser">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/logo_largura"
+        android:layout_height="@dimen/logo_altura"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoacademia" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="302dp"
+        android:layout_height="254dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="92dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/largura_text"
+                android:layout_height="wrap_content"
+                android:text="Aluno:"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/nome_aluno"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_altura"
+                android:background="@drawable/fundo_caixa_texto"
+                android:hint="@string/digite_exercicio"
+                android:textColor="@android:color/white"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/largura_text"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_altura"
+                android:background="@drawable/fundo_caixa_texto"
+                android:hint="@string/digite_exercicio"
+                android:textColor="@android:color/white"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Usuário ativo "
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <Switch
+                android:id="@+id/switch_ativo"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_confirmar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_altura"
+                android:layout_margin="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/btn_confirm"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_altura"
+                android:layout_margin="30dp"
+                android:background="@color/colorAccent"
+                android:text="@string/btn_cancelar"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txt_User"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

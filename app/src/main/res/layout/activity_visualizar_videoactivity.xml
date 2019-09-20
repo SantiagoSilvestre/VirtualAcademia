@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="@drawable/fundo_degrade"
+    tools:context=".activity.VisualizarVideoactivity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/txt_visuVideo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/textView5"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/largura_text"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <EditText
+            android:id="@+id/visNomeV"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_altura"
+            android:background="@drawable/fundo_caixa_texto"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <VideoView
+        android:layout_margin="10dp"
+        android:id="@+id/assistirTreino"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/linear1"
+        >
+
+    </VideoView>
+
+</RelativeLayout>

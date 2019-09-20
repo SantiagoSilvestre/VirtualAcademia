@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+    tools:context=".activity.VisualizarTreinoA">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/logofit" />
+    <TextView
+        android:layout_below="@+id/imageView"
+        android:id="@+id/txtNomeVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Video"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/txtNomeVideo"
+        android:layout_width="387dp"
+        android:layout_height="595dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+    <VideoView
+        android:id="@+id/visualizarVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

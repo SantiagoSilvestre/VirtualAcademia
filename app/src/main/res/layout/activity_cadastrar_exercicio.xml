@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fundo_degrade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="10dp"
+    tools:context=".activity.CadastrarExercicio">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CADASTRAR EXERCÍCIO"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_below="@+id/textView1"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/altura_texto"
+                android:text="@string/nome_exercicio"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/nome_exercicio"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_altura"
+                android:background="@drawable/fundo_caixa_texto"
+                android:hint="@string/digite_exercicio"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_categoria"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear3"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/gropTreino"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Treino A"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Treino B"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Treino C"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear4"
+            android:layout_below="@+id/linear3"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/altura_texto"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/nome_descricao"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/nome_descricao"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="@dimen/edit_altura_descricao"
+                android:background="@drawable/fundo_caixa_texto"
+                android:hint="@string/digite_exercicio"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear5"
+            android:layout_below="@+id/linear4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/altura_texto"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/nome_dicas"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/nome_dicas"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_altura"
+                android:background="@drawable/fundo_caixa_texto"
+                android:hint="@string/digite_exercicio"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear6"
+            android:layout_below="@+id/linear5"
+            android:layout_width="283dp"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:onClick="videoUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_add_a_photo" />
+
+            <Button
+                android:id="@+id/btn_salvarExercicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/btn_salvar"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <Button
+                android:id="@+id/btn_cancelarExercicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/colorAccent"
+                android:text="@string/btn_cancelar"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear7"
+            android:layout_below="@+id/linear6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                android:id="@+id/progVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressDrawable="@drawable/cor_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_marginBottom="2dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear8"
+            android:layout_below="@+id/linear7"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/video_exercicio"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

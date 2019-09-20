@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fundo_degrade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logoacademia" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_below="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="100dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/usuario"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/edit_login_email"
+                android:background="@drawable/fundo_caixa_texto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:hint="Digite o login"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_below="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="100dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="24sp"/>
+            <EditText
+                android:id="@+id/edit_login_senha"
+                android:background="@drawable/fundo_caixa_texto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:hint="Digite a sua senha"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_below="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btnLogar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fundo_botao"
+                android:textColor="@android:color/white"
+                android:text="@string/entrar"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_cadastrar"
+            android:layout_below="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCadastrar"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:onClick="abrirCadastroUsuario"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "249703687934",
+    "firebase_url": "https://fitflex-ac33b.firebaseio.com",
+    "project_id": "fitflex-ac33b",
+    "storage_bucket": "fitflex-ac33b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249703687934:android:815990b6a42e26fd",
+        "android_client_info": {
+          "package_name": "fitflex.com.fitflex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249703687934-bdmeqf5ubh2osc6dsp6jfapvmjbsth2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fitflex.com.fitflex",
+            "certificate_hash": "ef2c5755aba9feaa00138d96e3b866ce2c729c65"
+          }
+        },
+        {
+          "client_id": "249703687934-ghk8d24tvrvmg15mehaa0dooe1pndqjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwIKCGygBPLos3U5B55tRXBC1RRpLQQCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249703687934-ghk8d24tvrvmg15mehaa0dooe1pndqjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

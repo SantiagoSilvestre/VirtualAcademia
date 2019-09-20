@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">AcademiaVirtual</string>
+    <string name="btn_cadastrar">CADASTRAR</string>
+    <string name="txt_validacao">VALIDAÇÃO</string>
+    <string name="btn_validar">VALIDAR</string>
+    <string name="btnLogar">Entrar</string>
+    <string name="item_configuracoes">Configurações</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_adicionar">Adicionar</string>
+    <string name="item_pesquisar">Pesquisar</string>
+    <string name="treinosGerencia">Treinos</string>
+    <string name="contatos">ALUNOS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome_exercicio">Exercício</string>
+    <string name="digite_exercicio">Digite o Nome do Exercício</string>
+    <string name="nome_categoria">Treino</string>
+    <string name="nome_descricao">Descrição</string>
+    <string name="nome_dicas">Dicas</string>
+    <string name="btn_salvar">SALVAR</string>
+    <string name="btn_cancelar">CANCELAR</string>
+    <string name="txt_User">Usuário</string>
+    <string name="btn_modificar">ALTERAR</string>
+    <string name="btn_confirm">CONFIRMAR</string>
+    <string name="txtImc">Calcule seu IMC</string>
+    <string name="txtPeso">Peso</string>
+    <string name="txtAltura">Altura</string>
+    <string name="btn_treinoA">TREINO A</string>
+    <string name="btn_treinoB">TREINO B</string>
+    <string name="btn_treinoC">TREINO C</string>
+    <string name="btn_outros">OUTROS</string>
+    <string name="visualizarTreinos">Treinos</string>
+    <string name="imc">IMC</string>
+    <string name="treinoOutros">Outros</string>
+    <string name="txt_visuVideo">Visualizar Video</string>
+    <string name="btn_confirmVideo">Voltar</string>
+    <string name="btn_apagarVideo">Deletar</string>
+
+    <string name="password">Senha</string>
+    <string name="usuario">Usuário</string>
+    <string name="email">E-mail</string>
+    <string name="telefone">Cel</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="txtCadastrar">Não tem conta? Cadastre-se </string>
+    <string name="txtLogin">Já tem conta? Faça login </string>
+    <string name="entrar">Login</string>
+    <string name="mensagens">Mensagens</string>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MensagemGerencia">
+
+    <include android:id="@+id/tb_menu"
+             layout="@layout/toolbar"></include>
+
+    <ListView
+        android:layout_below="@+id/tb_menu"
+        android:id="@+id/lv_mensagens_contatos"
+        android:layout_gravity="center_horizontal|top"
+        android:divider="@color/colorLime"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

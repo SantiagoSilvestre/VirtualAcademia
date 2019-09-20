@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fitflex.com.fitflex">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.ConversaUsuario"
+                  android:parentActivityName=".activity.ConversaUsuario"></activity>
+        <activity
+            android:name=".activity.ConversaGerencia"
+            android:parentActivityName=".activity.MensagemGerencia" />
+        <activity android:name=".activity.MensagemGerencia" />
+        <activity android:name=".activity.VisualizarVideoactivity" />
+        <activity android:name=".activity.VisualizarTreinoA" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.VisualizarUser" />
+        <activity android:name=".activity.CadastroUsuario" />
+        <activity android:name=".activity.AguardarLiberacao" />
+        <activity android:name=".activity.UsuarioMain" />
+        <activity android:name=".activity.CadastrarExercicio" />
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.Inicio"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
